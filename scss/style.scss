@@ -22,5 +22,8 @@ body{
 }
 
 .container{
-  max-width: 1200;
+  max-width: 1220px;
+  margin: 15px 0;
 }
+
+@import "header.scss";

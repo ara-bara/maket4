@@ -86,4 +86,49 @@ body {
   opacity: 0.5;
 }
 
+.container {
+  max-width: 1220px;
+  margin: 15px 0;
+}
+
+header {
+  height: 100px;
+}
+header .container {
+  height: 100px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-bottom: 1px solid navajowhite;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header__item {
+  padding-right: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.without-padding {
+  padding-right: 0;
+}
+
+.test {
+  background: #337ab7;
+  border-radius: 30px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+}
+
+.logo img {
+  height: 82px;
+  width: 82px;
+  margin-top: 9px;
+}
+
 /*# sourceMappingURL=style.css.map */

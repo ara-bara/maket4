@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.1",
     "gulp-postcss": "^9.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
@@ -10,5 +11,22 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2"
-  }
+  },
+  "name": "package.json",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ara-bara/maket4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ara-bara/maket4/issues"
+  },
+  "homepage": "https://github.com/ara-bara/maket4#readme",
+  "description": ""
 }
