@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 	<head>
-		<title>Макет № 3</title>
+		<title>Макет № 4</title>
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="css/style.css" />
@@ -21,11 +21,50 @@
 						<div class="header__item">Відгуки про курс</div>
 						<div class="header__item">Відео</div>
 						<div class="header__item">Ментори</div>
-						<div class="header__item without-padding"><a href="#" class="test"><span>Подати заявку</span></a></div>
+						<div class="header__item without-padding"><a href="#" class="application"><span>Подати заявку</span></a></div>
 					</div>
 				</div>
 			</header>
-			<main></main>
+			<main>
+				<div class="content">
+					<div class="container">
+						<div class="content-left">
+							<div class="content-left__info">
+								<h2>Курси програмування у Луцьку</h2>
+								<p>Сфера ІТ розвивається максимально швидко. Зараз дуже популярно здобувати освіту, що повязана з ІТ. Існує лише одна проблема - брак дісно кваліфікованих спеціалістів в Україні. Під час навчання в університеті ми отримуємо мало практики і "живих", реальних кейсів. ІТ школа ОхІТ створила таку методичку навчання, при якій за короткий час ви отримуєте необхідні знання, щоб стати ІТ спеціалістом. Чекаємо вас на курсах з програмування в Луцьку. Старт наступного курсу 3 серпня.</p>
+							</div>
+						</div>
+						<div class="content-rigth">
+							<form action="#" method="get">
+								<h2>Зареєструватися на курси</h2>
+								<label class="fname" for="fname">Ім'я </label>
+								<input type="text" id="fname" name="firstname" placeholder="Ім'я" pattern="[А-Яа-яІіЇїЄє]{2,20}" title="Введіть ім'я українською мовою" required>
+								<label class="lname" for="lname">Прізвище </label>
+								<input type="text" id="lname" name="lasttname" placeholder="Прізвище" pattern="[А-Яа-яІіЇїЄє]{2,20}" title="Введіть ім'я українською мовою" required>
+								<label class="post" for="post">Мене більше цікавить </label>
+								<input type="text" id="post" name="post" placeholder="developer or QA" pattern="developer|QA+" title="Введіть developer або QA" required>
+								<label class="phone" for="phone">Номер телефону </label>
+								<input type="tel" id="phone" name="phone" placeholder="Номер телефону: +38 ХХХ ХХХ ХХХХ" pattern="[0-9]+" title="Введіть тільки цифри" required>
+								<label class="email" for="email">Email </label>
+								<input type="email" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+								<div class="form-group">
+									<label>
+										<input type="checkbox" name="privacy_policy" value="agreed" required>
+										Я погоджуюсь із
+										<a href="#" target="_blank">Політикою конфіденційності</a>
+									</label>
+								</div>
+								<button type="submit" class="form__button"><span>ЗАРЕЄСТРУВАТИ ЗАРАЗ</span></button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="about">
+					<div class="container">
+						<h2></h2>
+					</div>
+				</div>
+			</main>
 			<footer>
 				<div class="container"></div>
 			</footer>

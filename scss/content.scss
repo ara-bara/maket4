@@ -1,0 +1,141 @@
+.content{
+  background: #f7f7f7;
+  .container{
+    display: flex;
+  }
+}
+
+.content-left{
+  max-width: 610px;
+  height: 670px;
+  h2{
+    padding-top: 215px;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+  }
+  p{
+    padding-bottom: 110px;
+    max-width: 520px;
+    margin-left: 45px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    letter-spacing: 0.030em;
+  }
+}
+.content-left__info{
+  max-width: 580px;
+  margin: 0 15px;
+}
+
+.content-rigth{
+  max-width: 610px;
+  margin-left: 35px;
+  h2{
+    padding-top: 55px;
+    padding-bottom: 14px;
+    font-size: 23px;
+    word-spacing: 0;
+    letter-spacing: 0.45px;
+  }
+  label{
+    font-size: 15px;
+    padding-left: 1px;
+  }
+}
+
+input{
+  width: 590px;
+  height: 52px;
+  background-color: #ffffff;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+}
+
+.form-group{
+  margin-top: 20px;
+}
+
+input[type=checkbox] {
+  /* Задаємо властивості для checkbox */
+  width:13px;
+  height: 13px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+input::placeholder{
+  padding-left: 17px;
+}
+
+input[type=text]:invalid:not(:placeholder-shown){
+  @include bsr;
+  @include padl;
+}
+
+input[type=tel]:invalid:not(:placeholder-shown){
+  @include bsr;
+  @include padl;
+}
+
+input[type=email]:invalid:not(:placeholder-shown){
+  @include bsr;
+  @include padl;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+button{
+  border-radius: 25px;
+  width: 370px;
+  height: 50px;
+  background: #337ab7;
+  margin-top: 32px;
+  margin-left: 110px;
+  @extend %spanwhite;
+}
+
+.fname{
+  padding-bottom: 3px;
+  &::after{
+    @include star;
+  }
+}
+
+.lname{
+  @include pad;
+  &::after{
+    @include star;
+  }
+}
+
+.post{
+  @include pad;
+  &::after{
+    @include star;
+  }
+}
+
+.phone{
+  @include pad;
+  &::after{
+    @include star;
+  }
+}
+
+.email{
+  padding-top: 9px;
+  padding-bottom: 3px;
+  &::after{
+    @include star;
+  }
+}
+
+.form-group a{
+  color: black;
+}

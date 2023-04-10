@@ -23,7 +23,33 @@ body{
 
 .container{
   max-width: 1220px;
-  margin: 15px 0;
+  margin: 0 auto;
+}
+
+%spanwhite{
+  span{
+    color: white;
+  }
+}
+
+@mixin pad(){
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+@mixin bsr{
+  box-shadow: inset 0 0 13px 0 rgba(228,106,106,0.74);
+}
+@mixin padl{
+  padding-left: 20px;
+}
+@mixin star{
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background: url("../img/icons/required.png") 0 0/100% no-repeat;
 }
 
 @import "header.scss";
+@import "content.scss";

@@ -1,11 +1,13 @@
 header{
   height: 100px;
+  /*box-shadow: 0 -90px 2px 2px black;*/
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+  z-index: 10000;
   .container{
     height: 100px;
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
-    border-bottom: 1px solid navajowhite;
+
   }
 }
 
@@ -18,13 +20,16 @@ header{
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  font-weight: 100;
+  font-size: 14px;
 }
 
 .without-padding{
   padding-right: 0;
+  @extend %spanwhite;
 }
 
-.test{
+.application{
   background: #337ab7;
   border-radius: 30px;
   display: inline-block;
