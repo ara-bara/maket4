@@ -50,5 +50,23 @@ body{
   background: url("../img/icons/required.png") 0 0/100% no-repeat;
 }
 
+@mixin wbb{
+  width: 350px;
+  h3{
+    padding-bottom: 20px;
+    margin-bottom: 34px;
+    border-bottom: 1px solid #337ab7;
+  }
+}
+
+@mixin parag{
+  p{
+    text-align: center;
+    line-height: 23px;
+  }
+}
 @import "header.scss";
 @import "content.scss";
+@import "course-outline.scss";
+@import "statistics-block.scss";
+@import "testimonials.scss";

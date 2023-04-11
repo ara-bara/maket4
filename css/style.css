@@ -91,7 +91,7 @@ body {
   margin: 0 auto;
 }
 
-button span, .without-padding span {
+button span, .header__item_without-padding span {
   color: white;
 }
 
@@ -122,7 +122,7 @@ header .container {
   font-size: 14px;
 }
 
-.without-padding {
+.header__item_without-padding {
   padding-right: 0;
 }
 
@@ -153,11 +153,11 @@ header .container {
   height: 670px;
 }
 .content-left h2 {
-  padding-top: 215px;
+  padding-top: 212px;
   font-weight: bold;
   font-size: 35px;
   margin-left: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
 }
 .content-left p {
   padding-bottom: 110px;
@@ -305,4 +305,122 @@ button {
 
 .form-group a {
   color: black;
+}
+
+.course-outline {
+  height: 561px;
+}
+.course-outline h2 {
+  padding-top: 75px;
+  padding-left: 420px;
+  font-size: 35px;
+  position: relative;
+}
+
+.course-outline__list {
+  display: flex;
+}
+
+.list__item {
+  display: flex;
+  flex-direction: column;
+}
+.list__item .course-img {
+  margin: 45px auto 24px auto;
+  width: 82px;
+  height: 82px;
+}
+.list__item h3 {
+  font-size: 23px;
+  letter-spacing: 0.95px;
+  font-weight: 100;
+}
+
+.list__item_start {
+  width: 350px;
+  margin-left: 28px;
+}
+.list__item_start h3 {
+  padding-bottom: 20px;
+  margin-bottom: 34px;
+  border-bottom: 1px solid #337ab7;
+}
+.list__item_start p {
+  text-align: center;
+  line-height: 23px;
+}
+
+.list__item_middle {
+  width: 325px;
+  margin-left: 70px;
+}
+.list__item_middle h3 {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #337ab7;
+  margin-bottom: 34px;
+}
+.list__item_middle p {
+  text-align: center;
+  line-height: 23px;
+}
+
+.list__item_end {
+  margin-left: 70px;
+  width: 350px;
+}
+.list__item_end h3 {
+  padding-bottom: 20px;
+  margin-bottom: 34px;
+  border-bottom: 1px solid #337ab7;
+}
+.list__item_end p {
+  text-align: center;
+  line-height: 23px;
+}
+
+.statistics {
+  height: 310px;
+  background: #3498db;
+}
+.statistics p {
+  color: white;
+}
+
+.statistics__list {
+  display: flex;
+}
+
+.statistic__item {
+  display: flex;
+  flex-direction: column;
+  width: 405px;
+}
+.statistic__item img {
+  margin-top: 80px;
+  margin-left: 112px;
+  width: 80px;
+  height: 60px;
+}
+
+.statistic-quantity {
+  margin-left: 130px;
+  margin-top: 30px;
+  font-size: 27px;
+}
+
+.statistic-description {
+  margin-top: 16px;
+  margin-left: 77px;
+}
+
+.statistic-description_small-padding {
+  margin-left: 10px;
+}
+
+.statistic-quantity_big-padding {
+  margin-left: 136px;
+}
+
+.testimonials {
+  height: 525px;
 }

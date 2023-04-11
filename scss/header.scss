@@ -26,7 +26,7 @@ header{
   font-size: 14px;
 }
 
-.without-padding{
+.header__item_without-padding{
   padding-right: 0;
   @extend %spanwhite;
 }

@@ -1,0 +1,40 @@
+.statistics{
+  height: 310px;
+  background: #3498db;
+  p{
+    color: white;
+  }
+}
+.statistics__list{
+  display: flex;
+}
+.statistic__item{
+  display: flex;
+  flex-direction: column;
+  width: 405px;
+  img{
+    margin-top: 80px;
+    margin-left: 112px;
+    width: 80px;
+    height: 60px;
+  }
+}
+
+.statistic-quantity{
+  margin-left: 130px;
+  margin-top: 30px;
+  font-size: 27px;
+}
+
+.statistic-description{
+  margin-top: 16px;
+  margin-left: 77px;
+}
+
+.statistic-description_small-padding{
+  margin-left: 10px;
+}
+
+.statistic-quantity_big-padding{
+  margin-left: 136px;
+}
