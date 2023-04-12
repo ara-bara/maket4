@@ -2,6 +2,15 @@
   background: #f7f7f7;
   .container{
     display: flex;
+    button{
+      border-radius: 25px;
+      width: 370px;
+      height: 50px;
+      background: #337ab7;
+      margin-top: 32px;
+      margin-left: 110px;
+      @extend %spanwhite;
+    }
   }
 }
 
@@ -91,17 +100,6 @@ form{
   display: flex;
   flex-direction: column;
 }
-
-button{
-  border-radius: 25px;
-  width: 370px;
-  height: 50px;
-  background: #337ab7;
-  margin-top: 32px;
-  margin-left: 110px;
-  @extend %spanwhite;
-}
-
 .fname{
   padding-bottom: 3px;
   &::after{

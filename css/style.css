@@ -91,7 +91,7 @@ body {
   margin: 0 auto;
 }
 
-button span, .header__item_without-padding span {
+.content .container button span, .header__item_without-padding span {
   color: white;
 }
 
@@ -145,6 +145,14 @@ header .container {
 }
 .content .container {
   display: flex;
+}
+.content .container button {
+  border-radius: 25px;
+  width: 370px;
+  height: 50px;
+  background: #337ab7;
+  margin-top: 32px;
+  margin-left: 110px;
 }
 
 .content-left {
@@ -233,15 +241,6 @@ input[type=email]:invalid:not(:placeholder-shown) {
 form {
   display: flex;
   flex-direction: column;
-}
-
-button {
-  border-radius: 25px;
-  width: 370px;
-  height: 50px;
-  background: #337ab7;
-  margin-top: 32px;
-  margin-left: 110px;
 }
 
 .fname {
@@ -423,4 +422,81 @@ button {
 
 .testimonials {
   height: 525px;
+}
+.testimonials h2 {
+  margin: 77px 0 37px 325px;
+  font-size: 36px;
+  max-width: 1220px;
+}
+.testimonials .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .slick-dots li {
+  margin: 0 7px;
+}
+.testimonials .slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background: #666666;
+  border-radius: 50%;
+}
+
+.quotes {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.quotes::before {
+  content: "";
+  position: absolute;
+  height: 46px;
+  width: 46px;
+  top: -20px;
+  left: 3px;
+  background: url("../img/quotes-before.png") 0 0/100% no-repeat;
+}
+.quotes::after {
+  position: absolute;
+  content: "";
+  height: 46px;
+  width: 46px;
+  bottom: -8px;
+  right: 4px;
+  background: url("../img/quotes-after.png") 0 0/100% no-repeat;
+}
+
+.testimonial__text {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 870px;
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.testimonial__people {
+  text-align: center;
+}
+.testimonial__people p:first-child {
+  margin-top: 27px;
+  font-size: 21px;
+}
+.testimonial__people p:last-child {
+  margin-top: 5px;
+  margin-bottom: 100px;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.video {
+  height: 865px;
+  background: #f7f7f7;
 }
