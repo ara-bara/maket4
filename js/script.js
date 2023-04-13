@@ -9,3 +9,12 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $('.mentors__list').slick({
+        arrows:false,
+        dots:true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        fade: true
+    });
+});

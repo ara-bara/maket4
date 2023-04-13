@@ -1,14 +1,16 @@
 .course-outline{
   height: 561px;
+  margin-left: -20px;
   h2{
     padding-top: 75px;
-    padding-left: 420px;
+    padding-left: 428px;
     font-size: 35px;
     position: relative;
   }
 }
 .course-outline__list{
   display: flex;
+  justify-content: center;
 
 }
 .list__item{

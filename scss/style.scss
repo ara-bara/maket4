@@ -20,6 +20,16 @@ body{
   font-size: 16px;
 }
 
+main{
+  flex: 1 1 auto;
+}
+
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .container{
   max-width: 1220px;
   margin: 0 auto;
@@ -71,3 +81,9 @@ body{
 @import "statistics-block.scss";
 @import "testimonials.scss";
 @import "video.scss";
+@import "mentors.scss";
+@import "map.scss";
+@import "contact-form.scss";
+@import "footer.scss";
+
+

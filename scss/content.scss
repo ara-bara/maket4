@@ -40,7 +40,7 @@
   margin: 0 15px;
 }
 
-.content-rigth{
+.registration-form{
   margin-top: 100px;
   max-width: 610px;
   margin-left: 35px;
@@ -67,6 +67,12 @@ input{
 
 .form-group{
   margin-top: 20px;
+  a{
+    color: #337ab7;
+  }
+  a::after{
+    @include star;
+  }
 }
 
 input[type=checkbox] {
@@ -134,8 +140,4 @@ form{
   &::after{
     @include star;
   }
-}
-
-.form-group a{
-  color: black;
 }

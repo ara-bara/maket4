@@ -1,4 +1,22 @@
 .video{
   height: 865px;
   background: #f7f7f7;
+  h2{
+    padding-top: 78px;
+    padding-left: 565px;
+    font-size: 35px;
+  }
+  p{
+    margin-top: 35px;
+    padding-left: 10px;
+    line-height: 24px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
+.video__link iframe{
+  width: 1020px;
+  height: 520px;
+  margin-top: 27px;
+  margin-left: 100px;
 }

@@ -1,0 +1,51 @@
+.mentors{
+  height: 615px;
+  h2{
+    padding-left: 492px;
+    padding-top: 82px;
+    font-size: 36px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slick-dots li{
+    margin: 0 7px;
+  }
+  .slick-dots button{
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: #666666;
+    border-radius: 50%;
+  }
+}
+.human{
+  display: flex;
+  img{
+    margin-left: 75px;
+    margin-top: 10px;
+    height: 356px;
+    width: 337px;
+  }
+}
+.human__info{
+  margin-left: 106px;
+  p{
+    line-height: 25px;
+  }
+  h3{
+    margin-top: 42px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #337ab7;
+  }
+}
+.paragraph-bottom{
+  margin-bottom: 8px;
+}
+.paragraph-bigger{
+  margin-bottom: 10px;
+}
