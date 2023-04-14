@@ -7,6 +7,9 @@
     font-size: 35px;
     position: relative;
   }
+  p{
+    color: #a0a0a0;
+  }
 }
 .course-outline__list{
   display: flex;
@@ -46,4 +49,12 @@
   margin-left: 70px;
   @include wbb;
   @include parag;
+}
+
+.slick-track{
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
 }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -72,12 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/open-sans-v34-latin-regular.eot"); /* IE9 Compat Modes */
-  src: url("../fonts/open-sans-v34-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v34-latin-regular.woff") format("woff"), url("../fonts/open-sans-v34-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v34-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
 }
 body {
   height: 100%;
@@ -128,8 +124,21 @@ header .container {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  /*&:hover{
+    background: #f7f7f7;
+    a{
+      color: #337ab7;
+    }
+  }*/
+}
+.header__item a {
+  font-size: 15px;
+  color: black;
   font-weight: 100;
-  font-size: 14px;
+}
+.header__item a:hover {
+  background: #f7f7f7;
+  color: #337ab7;
 }
 
 .header__item_without-padding {
@@ -176,6 +185,7 @@ header .container {
   font-size: 35px;
   margin-left: 20px;
   margin-bottom: 38px;
+  letter-spacing: 1.5px;
 }
 .content-left p {
   padding-bottom: 110px;
@@ -184,6 +194,8 @@ header .container {
   font-size: 18px;
   line-height: 32px;
   font-weight: 500;
+  color: #7C7C81;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -215,6 +227,7 @@ input {
   background-color: #ffffff;
   border: 1px solid #c3c3c3;
   border-radius: 5px;
+  padding: 17px;
 }
 
 .form-group {
@@ -239,23 +252,31 @@ input[type=checkbox] {
   margin-top: -3px;
 }
 
-input::placeholder {
-  padding-left: 17px;
-}
-
-input[type=text]:invalid:not(:placeholder-shown) {
+input[type=text]:invalid:not(:focus):not(:placeholder-shown) {
   box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.74);
   padding-left: 20px;
 }
 
-input[type=tel]:invalid:not(:placeholder-shown) {
+input[type=text]:focus {
+  box-shadow: inset 0 0 1px 1px #3393FF;
+}
+
+input[type=tel]:invalid:not(:focus):not(:placeholder-shown) {
   box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.74);
   padding-left: 20px;
 }
 
-input[type=email]:invalid:not(:placeholder-shown) {
+input[type=tel]:focus {
+  box-shadow: inset 0 0 1px 1px #3393FF;
+}
+
+input[type=email]:invalid:not(:focus):not(:placeholder-shown) {
   box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.74);
   padding-left: 20px;
+}
+
+input[type=email]:focus {
+  box-shadow: inset 0 0 1px 1px #3393FF;
 }
 
 form {
@@ -332,6 +353,9 @@ form {
   font-size: 35px;
   position: relative;
 }
+.course-outline p {
+  color: #a0a0a0;
+}
 
 .course-outline__list {
   display: flex;
@@ -393,6 +417,14 @@ form {
 .list__item_end p {
   text-align: center;
   line-height: 23px;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
 }
 
 .statistics {
@@ -492,6 +524,7 @@ form {
   max-width: 870px;
   font-size: 22px;
   line-height: 38px;
+  color: #a0a0a0;
 }
 
 .testimonial__people {
@@ -504,14 +537,7 @@ form {
 .testimonial__people p:last-child {
   margin-top: 5px;
   margin-bottom: 100px;
-}
-
-.slick-track {
-  display: flex;
-}
-
-.slick-list {
-  overflow: hidden;
+  color: #a0a0a0;
 }
 
 .video {
@@ -529,6 +555,7 @@ form {
   line-height: 24px;
   font-size: 18px;
   text-align: center;
+  color: #a0a0a0;
 }
 
 .video__link iframe {
@@ -577,6 +604,7 @@ form {
 }
 .human__info p {
   line-height: 25px;
+  color: #a0a0a0;
 }
 .human__info h3 {
   margin-top: 42px;
@@ -633,6 +661,28 @@ footer {
   height: 155px;
   background: #f7f7f7;
 }
+footer img {
+  height: 11px;
+  width: 11px;
+  margin-right: 8px;
+}
+footer span {
+  color: #3498db;
+  font-size: 14px;
+}
 footer a {
-  color: #dedfe0;
+  color: #a0a0a0;
+}
+
+.copyright {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.privacy-policy {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 15px;
 }

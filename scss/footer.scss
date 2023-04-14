@@ -1,7 +1,27 @@
 footer{
   height: 155px;
   background: #f7f7f7;
-  a{
-    color: #dedfe0;
+  img{
+    height: 11px;
+    width: 11px;
+    margin-right: 8px;
   }
+  span{
+    color: #3498db;
+    font-size: 14px;
+  }
+  a{
+    color: #a0a0a0;
+  }
+}
+.copyright{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.privacy-policy{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 15px;
 }

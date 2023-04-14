@@ -50,6 +50,7 @@
   max-width: 870px;
   font-size: 22px;
   line-height: 38px;
+  color: #a0a0a0;
 }
 
 .testimonial__people{
@@ -61,13 +62,6 @@
   p:last-child{
     margin-top: 5px;
     margin-bottom: 100px;
+    color: #a0a0a0;
   }
-}
-
-.slick-track{
-  display: flex;
-}
-
-.slick-list {
-  overflow: hidden;
 }
