@@ -15,9 +15,10 @@
     color: #a0a0a0;
   }
 }
+
 .video__link iframe{
   width: 1020px;
   height: 520px;
-  margin-top: 27px;
-  margin-left: 100px;
+  display: block;
+  margin: 27px auto 0 auto;
 }

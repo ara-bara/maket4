@@ -23,8 +23,9 @@ main{
 }
 
 .container{
-  max-width: 1220px;
+  max-width: 1250px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 %spanwhite{
@@ -80,5 +81,5 @@ main{
 @import "map.scss";
 @import "contact-form.scss";
 @import "footer.scss";
-
+@import "adaptive.scss";
 

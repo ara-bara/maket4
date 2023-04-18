@@ -13,12 +13,11 @@ header{
   }
 }
 
-.header-list{
+.header__menu{
   display: flex;
 }
 
-.header__item{
-  padding-right: 40px;
+.header__list{
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -38,10 +37,11 @@ header{
     }
   }
 }
-
-.header__item_without-padding{
-  padding-right: 0;
-  @extend %spanwhite;
+.header__list a{
+  padding-right: 40px;
+  &:last-child{
+    padding-right: 20px;
+  }
 }
 
 .application{
@@ -50,6 +50,11 @@ header{
   display: inline-block;
   padding: 10px 20px;
   color: black;
+}
+
+.application_without-padding{
+  padding-right: 0;
+  @extend %spanwhite;
 }
 
 .logo img{
