@@ -6,8 +6,7 @@
     max-width: 1220px;
   }
   .slick-dots{
-    display: flex;
-    justify-content: center;
+    @include center;
     align-items: center;
   }
   .slick-dots li{

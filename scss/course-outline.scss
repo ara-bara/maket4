@@ -12,9 +12,7 @@
   }
 }
 .course-outline__list{
-  display: flex;
-  justify-content: center;
-
+  @include center;
 }
 .list__item{
   display: flex;

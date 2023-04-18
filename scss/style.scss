@@ -71,6 +71,12 @@ main{
     line-height: 23px;
   }
 }
+
+/* centering */
+@mixin center{
+  display: flex;
+  justify-content: center;
+}
 @import "header.scss";
 @import "content.scss";
 @import "course-outline.scss";

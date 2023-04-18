@@ -16,12 +16,10 @@ footer{
 }
 .copyright{
   margin-top: 50px;
-  display: flex;
-  justify-content: center;
+  @include center;
 }
 .privacy-policy{
-  display: flex;
-  justify-content: center;
+  @include center;
   margin-top: 10px;
   font-size: 15px;
 }
