@@ -353,7 +353,6 @@ form {
 
 .course-outline {
   height: 561px;
-  margin-left: -20px;
 }
 .course-outline h2 {
   padding-top: 75px;
@@ -367,7 +366,8 @@ form {
 
 .course-outline__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .list__item {
@@ -387,7 +387,6 @@ form {
 
 .list__item_start {
   width: 350px;
-  margin-left: 28px;
 }
 .list__item_start h3 {
   padding-bottom: 20px;
@@ -401,7 +400,6 @@ form {
 
 .list__item_middle {
   width: 325px;
-  margin-left: 70px;
 }
 .list__item_middle h3 {
   padding-bottom: 20px;
@@ -414,7 +412,6 @@ form {
 }
 
 .list__item_end {
-  margin-left: 70px;
   width: 350px;
 }
 .list__item_end h3 {

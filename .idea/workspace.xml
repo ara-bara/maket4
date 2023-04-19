@@ -9,18 +9,7 @@
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sass/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sass/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sass/sass.dart.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sass/sass.dart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/adaptive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/adaptive.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/course-outline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/course-outline.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/mentors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/mentors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/statistics-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/statistics-block.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/testimonials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/testimonials.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +82,7 @@
       <workItem from="1681305486563" duration="26983000" />
       <workItem from="1681821267381" duration="23000" />
       <workItem from="1681821468655" duration="340000" />
-      <workItem from="1681826008320" duration="3857000" />
+      <workItem from="1681826008320" duration="8037000" />
     </task>
     <servers />
   </component>
