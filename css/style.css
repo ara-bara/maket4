@@ -98,7 +98,7 @@ main {
   padding: 0 15px;
 }
 
-.content .container button span, .application_without-padding span {
+.content .container button span {
   color: white;
 }
 
@@ -125,46 +125,36 @@ header .container {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  /*&:hover{
-    background: #f7f7f7;
-    a{
-      color: #337ab7;
-    }
-  }*/
 }
 .header__list a {
+  display: block;
+  padding: 20px;
   font-size: 15px;
   color: black;
   font-weight: 100;
+  letter-spacing: 0.33px;
+}
+.header__list a:first-child {
+  padding-left: 20px;
 }
 .header__list a:hover {
-  background: #f7f7f7;
-  color: #337ab7;
-}
-
-.header__list a {
-  padding-right: 40px;
-}
-.header__list a:last-child {
-  padding-right: 20px;
-}
-
-.application {
   background: #337ab7;
   border-radius: 30px;
   display: inline-block;
   padding: 10px 20px;
-  color: black;
-}
-
-.application_without-padding {
-  padding-right: 0;
+  color: white;
 }
 
 .logo img {
-  height: 82px;
-  width: 82px;
-  margin-top: 9px;
+  height: 80px;
+  width: 80px;
+  margin-top: 10px;
+  position: fixed;
+  z-index: 10;
+}
+
+.header__button {
+  display: none;
 }
 
 .content {
@@ -629,7 +619,7 @@ form {
 }
 
 .map {
-  height: 400px;
+  height: 403px;
 }
 .map iframe {
   height: 100%;
@@ -637,7 +627,7 @@ form {
 }
 
 .contact-form {
-  height: 198px;
+  height: 195px;
   background: #3498db;
 }
 .contact-form a {
@@ -658,7 +648,7 @@ form {
   text-align: center;
 }
 .contact-form__item img {
-  margin: 40px auto 20px auto;
+  margin: 40px auto 17px auto;
   height: 54px;
   width: 67px;
 }
@@ -785,19 +775,20 @@ footer a {
     max-width: 750px;
   }
   .header__button {
+    display: block;
     width: 40px;
     height: 30px;
     z-index: 10;
     border-radius: 3px;
-    right: 20px;
-    top: 30px;
+    right: 18px;
+    top: 20px;
     background: #3498db;
     position: absolute;
     overflow: hidden;
   }
   .header__button span {
     width: 20px;
-    height: 2px;
+    height: 1px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -819,9 +810,9 @@ footer a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 320px;
     padding: 15px;
-    background-color: #dcdcdc;
+    background-color: white;
     transform: translateX(-100%);
     transition: transform 0.5s;
   }
@@ -831,6 +822,9 @@ footer a {
   .header__list {
     display: flex;
     flex-direction: column;
+  }
+  .header__list a {
+    padding: 7px;
   }
   .mentors .human {
     display: flex;
@@ -909,5 +903,13 @@ footer a {
   }
   .content-left h2 {
     padding-top: 120px;
+  }
+  header {
+    height: 70px;
+  }
+  .logo img {
+    margin-top: 5px;
+    height: 60px;
+    width: 60px;
   }
 }

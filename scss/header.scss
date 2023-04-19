@@ -9,7 +9,6 @@ header{
     height: 100px;
     display: flex;
     justify-content: space-between;
-
   }
 }
 
@@ -21,44 +20,34 @@ header{
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  /*&:hover{
-    background: #f7f7f7;
-    a{
-      color: #337ab7;
-    }
-  }*/
   a{
+    display: block;
+    padding: 20px;
     font-size: 15px;
     color: black;
     font-weight: 100;
+    letter-spacing: 0.33px;
+    &:first-child{
+      padding-left: 20px;
+    }
     &:hover{
-      background: #f7f7f7;
-      color: #337ab7;
+      background: #337ab7;
+      border-radius: 30px;
+      display: inline-block;
+      padding: 10px 20px;
+      color: white;
     }
   }
 }
-.header__list a{
-  padding-right: 40px;
-  &:last-child{
-    padding-right: 20px;
-  }
-}
-
-.application{
-  background: #337ab7;
-  border-radius: 30px;
-  display: inline-block;
-  padding: 10px 20px;
-  color: black;
-}
-
-.application_without-padding{
-  padding-right: 0;
-  @extend %spanwhite;
-}
 
 .logo img{
-  height: 82px;
-  width: 82px;
-  margin-top: 9px;
+  height: 80px;
+  width: 80px;
+  margin-top: 10px;
+  position: fixed;
+  z-index: 10;
+}
+
+.header__button{
+  display: none;
 }

@@ -95,19 +95,20 @@
     max-width: 750px;
   }
   .header__button {
+    display: block;
     width: 40px;
     height: 30px;
     z-index: 10;
     border-radius: 3px;
-    right: 20px;
-    top: 30px;
+    right: 18px;
+    top: 20px;
     background: #3498db;
     position: absolute;
     overflow: hidden;
   }
   .header__button span {
     width: 20px;
-    height: 2px;
+    height: 1px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,9 +132,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 320px;
     padding: 15px;
-    background-color: #dcdcdc;
+    background-color: white;
     transform: translateX(-100%);
     transition: transform 0.5s;
 
@@ -144,6 +145,9 @@
   .header__list {
     display: flex;
     flex-direction: column;
+    a{
+      padding: 7px;
+    }
   }
   .mentors {
     .human {
@@ -232,6 +236,14 @@
     h2 {
       padding-top: 120px;
     }
+  }
+  header {
+    height: 70px;
+  }
+  .logo img{
+    margin-top: 5px;
+    height: 60px;
+    width: 60px;
   }
 }
 
