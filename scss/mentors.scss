@@ -5,20 +5,7 @@
     padding-top: 82px;
     font-size: 36px;
   }
-  .slick-dots{
-    @include center;
-    align-items: center;
-  }
-  .slick-dots li{
-    margin: 0 7px;
-  }
-  .slick-dots button{
-    font-size: 0;
-    width: 12px;
-    height: 12px;
-    background: #666666;
-    border-radius: 50%;
-  }
+
 }
 .human{
   display: flex;

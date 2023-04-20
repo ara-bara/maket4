@@ -17,11 +17,13 @@ $(document).ready(function(){
         pauseOnHover:   false,
         slidesToShow:   3,
         slidesToScroll: 1,
+        dots: false,
         responsive:[
             {
                 breakpoint: 850,
                 settings: {
-                    slidesToShow: 2
+                    dots:true,
+                    slidesToShow: 2,
                 }
             },
             {

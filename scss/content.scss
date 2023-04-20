@@ -50,7 +50,7 @@
   h2{
     padding-top: 55px;
     padding-bottom: 14px;
-    font-size: 23px;
+    font-size: 24px;
     word-spacing: 0;
     letter-spacing: 0.45px;
   }
@@ -65,14 +65,17 @@ input{
   height: 52px;
   background-color: #ffffff;
   border: 1px solid #c3c3c3;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 17px;
 }
 
 .form-group{
   margin-top: 20px;
   a{
-    color: #337ab7;
+    color: black;
+    span{
+      color: #337ab7;
+    }
   }
   a::after{
     @include star;

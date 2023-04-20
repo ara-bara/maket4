@@ -1,3 +1,26 @@
+/*slick style*/
+.slick-track{
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+.slick-dots{
+  @include center;
+  align-items: center;
+}
+.slick-dots li{
+  margin: 0 7px;
+}
+.slick-dots button{
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background: #666666;
+  border-radius: 50%;
+}
+
 .course-outline{
   height: 561px;
   h2{
@@ -8,6 +31,9 @@
   }
   p{
     color: #a0a0a0;
+  }
+  .slick-track{
+    justify-content: space-between;
   }
 }
 .course-outline__list{
@@ -34,7 +60,7 @@
   @include parag;
 }
 .list__item_middle{
-  width: 325px;
+  width: 324px !important;
   h3{
     padding-bottom: 20px;
     border-bottom: 1px solid #337ab7;
@@ -45,12 +71,4 @@
 .list__item_end{
   @include wbb;
   @include parag;
-}
-
-.slick-track{
-  display: flex;
-}
-
-.slick-list {
-  overflow: hidden;
 }

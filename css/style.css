@@ -210,7 +210,7 @@ header .container {
 .registration-form h2 {
   padding-top: 55px;
   padding-bottom: 14px;
-  font-size: 23px;
+  font-size: 24px;
   word-spacing: 0;
   letter-spacing: 0.45px;
 }
@@ -224,7 +224,7 @@ input {
   height: 52px;
   background-color: #ffffff;
   border: 1px solid #c3c3c3;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 17px;
 }
 
@@ -232,6 +232,9 @@ input {
   margin-top: 20px;
 }
 .form-group a {
+  color: black;
+}
+.form-group a span {
   color: #337ab7;
 }
 .form-group a::after {
@@ -341,6 +344,33 @@ form {
   background: url("../img/icons/required.png") 0 0/100% no-repeat;
 }
 
+/*slick style*/
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  margin: 0 7px;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background: #666666;
+  border-radius: 50%;
+}
+
 .course-outline {
   height: 561px;
 }
@@ -352,6 +382,9 @@ form {
 }
 .course-outline p {
   color: #a0a0a0;
+}
+.course-outline .slick-track {
+  justify-content: space-between;
 }
 
 .course-outline__list {
@@ -376,7 +409,7 @@ form {
 }
 
 .list__item_start {
-  width: 350px;
+  width: 350px !important;
 }
 .list__item_start h3 {
   padding-bottom: 20px;
@@ -389,7 +422,7 @@ form {
 }
 
 .list__item_middle {
-  width: 325px;
+  width: 324px !important;
 }
 .list__item_middle h3 {
   padding-bottom: 20px;
@@ -402,7 +435,7 @@ form {
 }
 
 .list__item_end {
-  width: 350px;
+  width: 350px !important;
 }
 .list__item_end h3 {
   padding-bottom: 20px;
@@ -412,14 +445,6 @@ form {
 .list__item_end p {
   text-align: center;
   line-height: 23px;
-}
-
-.slick-track {
-  display: flex;
-}
-
-.slick-list {
-  overflow: hidden;
 }
 
 .statistics {
@@ -473,21 +498,6 @@ form {
   margin: 77px 0 37px 325px;
   font-size: 36px;
   max-width: 1220px;
-}
-.testimonials .slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.testimonials .slick-dots li {
-  margin: 0 7px;
-}
-.testimonials .slick-dots button {
-  font-size: 0;
-  width: 12px;
-  height: 12px;
-  background: #666666;
-  border-radius: 50%;
 }
 
 .quotes {
@@ -568,21 +578,6 @@ form {
   padding-left: 492px;
   padding-top: 82px;
   font-size: 36px;
-}
-.mentors .slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mentors .slick-dots li {
-  margin: 0 7px;
-}
-.mentors .slick-dots button {
-  font-size: 0;
-  width: 12px;
-  height: 12px;
-  background: #666666;
-  border-radius: 50%;
 }
 
 .human {
@@ -720,7 +715,7 @@ footer a {
     margin: 0 auto;
   }
   .course-outline h2 {
-    padding-top: 75px;
+    padding-top: 73px;
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -739,7 +734,7 @@ footer a {
     height: 100%;
   }
   .content-left p {
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     margin-left: 0;
   }
   .registration-form {
@@ -845,41 +840,65 @@ footer a {
   }
 }
 @media (max-width: 768px) {
-  .container {
-    max-width: 750px;
+  header {
+    height: 70px;
   }
-  input {
-    width: 500px;
-  }
-  .statistic__item {
-    width: 100%;
-  }
-  .statistic__item img {
-    margin: 40px auto 0 auto;
-    width: 80px;
+  header .logo img {
+    margin-top: 5px;
     height: 60px;
+    width: 60px;
   }
-  .statistic-quantity {
-    margin: 30px auto 0 auto;
-    /*font-size: 27px;*/
+  .content .container {
+    padding: 0 7px;
   }
-  .statistic-description {
-    margin: 16px auto 0 auto;
+  .content .container .content-left h2 {
+    padding-top: 95px;
+    line-height: 30px;
+    font-size: 25px;
     text-align: center;
+    margin: 0 0 17px 0;
+    font-weight: 500;
+    letter-spacing: 0.1px;
   }
-  .statistic-description_small-padding {
-    margin: 0 auto;
+  .content .container .content-left p {
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0;
+    font-weight: 400;
   }
-  .testimonial__people p:last-child {
-    margin-bottom: 10px;
+  .content .container .registration-form {
+    padding: 0 10px;
   }
-}
-@media (max-width: 768px) {
-  input {
+  .content .container .registration-form h2 {
+    text-align: center;
+    font-weight: 400;
+  }
+  .content .container .registration-form input {
     width: 100%;
+    height: 43px;
   }
-  .content .container button {
-    width: 60%;
+  .content .container .registration-form input[type=email] {
+    margin-bottom: -2px;
+  }
+  .content .container .registration-form .post {
+    padding-top: 8px;
+    padding-bottom: 1px;
+  }
+  .content .container .registration-form input[type=checkbox] {
+    width: 14px;
+    height: 14px;
+    vertical-align: bottom;
+    margin-top: 12px;
+    margin-left: -2px;
+  }
+  .content .container .registration-form a {
+    display: block;
+    margin-top: -25px;
+    margin-left: 18px;
+    line-height: 20px;
+  }
+  .content .container .registration-form button {
+    width: 80%;
   }
   .testimonials {
     height: 100%;
@@ -901,15 +920,35 @@ footer a {
     grid-template-rows: 1fr 1fr;
     justify-items: center;
   }
-  .content-left h2 {
-    padding-top: 120px;
+  .statistic__item {
+    width: 100%;
   }
-  header {
-    height: 70px;
-  }
-  .logo img {
-    margin-top: 5px;
+  .statistic__item img {
+    margin: 40px auto 0 auto;
+    width: 80px;
     height: 60px;
-    width: 60px;
+  }
+  .statistic-quantity {
+    margin: 30px auto 0 auto;
+  }
+  .statistic-description {
+    margin: 16px auto 0 auto;
+    text-align: center;
+  }
+  .statistic-description_small-padding {
+    margin: 0 auto;
+  }
+  .testimonial__people p:last-child {
+    margin-bottom: 10px;
+  }
+  .course-outline h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+  }
+}
+@media (max-width: 350px) {
+  .content .container .registration-form button {
+    width: 97%;
   }
 }
