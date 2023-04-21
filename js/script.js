@@ -10,13 +10,10 @@ header__button.addEventListener('click', function(){
 $(document).ready(function(){
     $('.course-outline__list').slick({
         arrows:         false,
-        autoplay:       true,
-        autoplaySpeed:  4000,
-        infinite:       false,
-        pauseOnFocus:   false,
-        pauseOnHover:   false,
         slidesToShow:   3,
         slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
         dots: false,
         responsive:[
             {
