@@ -13,9 +13,10 @@
       <change beforePath="$PROJECT_DIR$/scss/content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/content.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/course-outline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/course-outline.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/mentors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/mentors.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/statistics-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/statistics-block.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/testimonials.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/testimonials.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/video.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/video.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,7 @@
       <workItem from="1681821267381" duration="23000" />
       <workItem from="1681821468655" duration="340000" />
       <workItem from="1681826008320" duration="8037000" />
-      <workItem from="1681912001582" duration="29476000" />
+      <workItem from="1681912001582" duration="49512000" />
     </task>
     <servers />
   </component>

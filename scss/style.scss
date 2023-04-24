@@ -82,6 +82,27 @@ main{
   }
 }
 
+/* quotes medium*/
+@mixin qm{
+  width: 30px;
+  height: 30px;
+}
+
+/*quotes styles*/
+@mixin qs{
+  position: absolute;
+  content: '';
+  height: 46px;
+  width: 46px;
+}
+
+/* quotes small*/
+@mixin qsm{
+  width: 24px;
+  height: 24px;
+}
+
+
 /* centering */
 @mixin center{
   display: flex;
