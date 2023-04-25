@@ -98,7 +98,7 @@ main {
   padding: 0 15px;
 }
 
-.content .container button span {
+.content .container .registration-form button span {
   color: white;
 }
 
@@ -154,17 +154,22 @@ header .container {
   display: flex;
   justify-content: space-between;
 }
-
-.header__menu {
+header .container .logo img {
+  height: 80px;
+  width: 80px;
+  margin-top: 10px;
+  position: fixed;
+  z-index: 10;
+}
+header .container .header__menu {
   display: flex;
 }
-
-.header__list {
+header .container .header__menu .header__list {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
 }
-.header__list a {
+header .container .header__menu .header__list a {
   display: block;
   padding: 20px;
   font-size: 15px;
@@ -172,23 +177,14 @@ header .container {
   font-weight: 100;
   letter-spacing: 0.33px;
 }
-.header__list a:hover {
+header .container .header__menu .header__list a:hover {
   background: #337ab7;
   border-radius: 30px;
   display: inline-block;
   padding: 10px 20px;
   color: white;
 }
-
-.logo img {
-  height: 80px;
-  width: 80px;
-  margin-top: 10px;
-  position: fixed;
-  z-index: 10;
-}
-
-.header__button {
+header .container .header__menu .header__button {
   display: none;
 }
 
@@ -198,21 +194,16 @@ header .container {
 .content .container {
   display: flex;
 }
-.content .container button {
-  border-radius: 25px;
-  width: 370px;
-  height: 50px;
-  background: #337ab7;
-  margin-top: 32px;
-  margin-left: 110px;
-}
-
-.content-left {
+.content .container .content-left {
   margin-top: 100px;
   max-width: 610px;
   height: 670px;
 }
-.content-left h2 {
+.content .container .content-left .content-left__info {
+  max-width: 580px;
+  margin: 0 15px;
+}
+.content .container .content-left .content-left__info h2 {
   padding-top: 212px;
   font-weight: bold;
   font-size: 35px;
@@ -220,7 +211,7 @@ header .container {
   text-align: center;
   letter-spacing: 1px;
 }
-.content-left p {
+.content .container .content-left .content-left__info p {
   padding-bottom: 110px;
   max-width: 520px;
   font-size: 18px;
@@ -230,30 +221,23 @@ header .container {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
-.content-left__info {
-  max-width: 580px;
-  margin: 0 15px;
-}
-
-.registration-form {
+.content .container .registration-form {
   margin-top: 100px;
   max-width: 610px;
   margin-left: 35px;
 }
-.registration-form h2 {
+.content .container .registration-form h2 {
   padding-top: 55px;
   padding-bottom: 14px;
   font-size: 24px;
   word-spacing: 0;
   letter-spacing: 0.45px;
 }
-.registration-form label {
+.content .container .registration-form label {
   font-size: 15px;
   padding-left: 1px;
 }
-
-input {
+.content .container .registration-form input {
   width: 590px;
   height: 52px;
   background-color: #ffffff;
@@ -261,121 +245,115 @@ input {
   border-radius: 3px;
   padding: 17px;
 }
-
-.form-group {
-  margin-top: 20px;
+.content .container .registration-form input[type=text]:invalid:not(:focus):not(:placeholder-shown) {
+  box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.74);
+  padding-left: 20px;
 }
-.form-group a {
-  color: black;
+.content .container .registration-form input[type=text]:focus {
+  box-shadow: inset 0 0 1px 1px #3393FF;
 }
-.form-group a span {
-  color: #337ab7;
+.content .container .registration-form input[type=tel]:invalid:not(:focus):not(:placeholder-shown) {
+  box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.74);
+  padding-left: 20px;
 }
-.form-group a::after {
+.content .container .registration-form input[type=tel]:focus {
+  box-shadow: inset 0 0 1px 1px #3393FF;
+}
+.content .container .registration-form input[type=email]:invalid:not(:focus):not(:placeholder-shown) {
+  box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.74);
+  padding-left: 20px;
+}
+.content .container .registration-form input[type=email]:focus {
+  box-shadow: inset 0 0 1px 1px #3393FF;
+}
+.content .container .registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+.content .container .registration-form .fname {
+  padding-bottom: 3px;
+}
+.content .container .registration-form .fname::after {
   content: "";
   width: 6px;
   height: 6px;
   display: inline-block;
   background: url("../img/icons/required.png") 0 0/100% no-repeat;
 }
-
-input[type=checkbox] {
+.content .container .registration-form .lname {
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+.content .container .registration-form .lname::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background: url("../img/icons/required.png") 0 0/100% no-repeat;
+}
+.content .container .registration-form .post {
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+.content .container .registration-form .post::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background: url("../img/icons/required.png") 0 0/100% no-repeat;
+}
+.content .container .registration-form .phone {
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+.content .container .registration-form .phone::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background: url("../img/icons/required.png") 0 0/100% no-repeat;
+}
+.content .container .registration-form .email {
+  padding-top: 9px;
+  padding-bottom: 3px;
+}
+.content .container .registration-form .email::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background: url("../img/icons/required.png") 0 0/100% no-repeat;
+}
+.content .container .registration-form .form-group {
+  margin-top: 20px;
+}
+.content .container .registration-form .form-group a {
+  color: black;
+}
+.content .container .registration-form .form-group a span {
+  color: #337ab7;
+}
+.content .container .registration-form .form-group a::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background: url("../img/icons/required.png") 0 0/100% no-repeat;
+}
+.content .container .registration-form .form-group input[type=checkbox] {
   /* Задаємо властивості для checkbox */
   width: 13px;
   height: 13px;
   vertical-align: middle;
   margin-top: -3px;
 }
-
-input[type=text]:invalid:not(:focus):not(:placeholder-shown) {
-  box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.74);
-  padding-left: 20px;
-}
-
-input[type=text]:focus {
-  box-shadow: inset 0 0 1px 1px #3393FF;
-}
-
-input[type=tel]:invalid:not(:focus):not(:placeholder-shown) {
-  box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.74);
-  padding-left: 20px;
-}
-
-input[type=tel]:focus {
-  box-shadow: inset 0 0 1px 1px #3393FF;
-}
-
-input[type=email]:invalid:not(:focus):not(:placeholder-shown) {
-  box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.74);
-  padding-left: 20px;
-}
-
-input[type=email]:focus {
-  box-shadow: inset 0 0 1px 1px #3393FF;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.fname {
-  padding-bottom: 3px;
-}
-.fname::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  display: inline-block;
-  background: url("../img/icons/required.png") 0 0/100% no-repeat;
-}
-
-.lname {
-  padding-top: 10px;
-  padding-bottom: 2px;
-}
-.lname::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  display: inline-block;
-  background: url("../img/icons/required.png") 0 0/100% no-repeat;
-}
-
-.post {
-  padding-top: 10px;
-  padding-bottom: 2px;
-}
-.post::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  display: inline-block;
-  background: url("../img/icons/required.png") 0 0/100% no-repeat;
-}
-
-.phone {
-  padding-top: 10px;
-  padding-bottom: 2px;
-}
-.phone::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  display: inline-block;
-  background: url("../img/icons/required.png") 0 0/100% no-repeat;
-}
-
-.email {
-  padding-top: 9px;
-  padding-bottom: 3px;
-}
-.email::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  display: inline-block;
-  background: url("../img/icons/required.png") 0 0/100% no-repeat;
+.content .container .registration-form button {
+  border-radius: 25px;
+  width: 370px;
+  height: 50px;
+  background: #337ab7;
+  margin-top: 32px;
+  margin-left: 110px;
 }
 
 .course-outline {
@@ -550,37 +528,33 @@ form {
   padding-top: 82px;
   font-size: 36px;
 }
-
-.human {
+.mentors .mentors__list .human {
   display: flex;
 }
-.human img {
+.mentors .mentors__list .human img {
   margin-left: 75px;
   margin-top: 10px;
   height: 356px;
   width: 337px;
 }
-
-.human__info {
+.mentors .mentors__list .human .human__info {
   margin-left: 106px;
 }
-.human__info p {
+.mentors .mentors__list .human .human__info p {
   line-height: 25px;
   color: #a0a0a0;
 }
-.human__info h3 {
+.mentors .mentors__list .human .human__info h3 {
   margin-top: 42px;
   margin-bottom: 50px;
   font-size: 20px;
   font-weight: bold;
   color: #337ab7;
 }
-
-.paragraph-bottom {
+.mentors .mentors__list .human .human__info .paragraph-bottom {
   margin-bottom: 8px;
 }
-
-.paragraph-bigger {
+.mentors .mentors__list .human .human__info .paragraph-bigger {
   margin-bottom: 10px;
 }
 
@@ -596,24 +570,23 @@ form {
   height: 195px;
   background: #3498db;
 }
-.contact-form a {
-  color: white;
-  font-size: 14px;
-  margin-top: -5px;
-}
-.contact-form h3 {
-  color: white;
-}
 
 .contact-form__list {
   display: flex;
 }
-
-.contact-form__item {
+.contact-form__list .contact-form__item {
   width: 405px;
   text-align: center;
 }
-.contact-form__item img {
+.contact-form__list .contact-form__item a {
+  color: white;
+  font-size: 14px;
+  margin-top: -5px;
+}
+.contact-form__list .contact-form__item h3 {
+  color: white;
+}
+.contact-form__list .contact-form__item img {
   margin: 40px auto 17px auto;
   height: 54px;
   width: 67px;
@@ -623,30 +596,28 @@ footer {
   height: 155px;
   background: #f7f7f7;
 }
-footer img {
-  height: 11px;
-  width: 11px;
-  margin-right: 8px;
-}
-footer span {
-  color: #3498db;
-  font-size: 14px;
-}
-footer a {
-  color: #a0a0a0;
-}
-
-.copyright {
+footer .copyright {
   margin-top: 50px;
   display: flex;
   justify-content: center;
 }
-
-.privacy-policy {
+footer .copyright img {
+  height: 11px;
+  width: 11px;
+  margin-right: 8px;
+}
+footer .copyright span {
+  color: #3498db;
+  font-size: 14px;
+}
+footer .privacy-policy {
   display: flex;
   justify-content: center;
   margin-top: 10px;
   font-size: 15px;
+}
+footer a {
+  color: #a0a0a0;
 }
 
 @media (max-width: 1200px) {
@@ -695,43 +666,43 @@ footer a {
   .content .container {
     flex-direction: column;
   }
-  .content .container button {
-    margin: 32px auto 30px auto;
-  }
-  .content-left {
+  .content .container .content-left {
     margin: 10px auto 20px auto;
     height: 100%;
   }
-  .content-left p {
+  .content .container .content-left .content-left__info p {
     padding-bottom: 35px;
     margin-left: 0;
   }
-  .registration-form {
+  .content .container .registration-form {
     margin: 0 auto;
     height: 100%;
   }
-  .registration-form h2 {
+  .content .container .registration-form h2 {
     padding-top: 0;
   }
-  .testimonials h2 {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0 30px 0;
+  .content .container .registration-form button {
+    margin: 32px auto 30px auto;
   }
   .mentors {
     height: 100%;
-  }
-  .mentors .slick-dots {
-    padding-bottom: 20px;
-  }
-  .mentors .human img {
-    margin-left: 20px;
-    margin-top: 10%;
   }
   .mentors h2 {
     padding: 42px 0 40px 0;
     display: flex;
     justify-content: center;
+  }
+  .mentors .slick-dots {
+    padding-bottom: 20px;
+  }
+  .mentors .mentors__list .human img {
+    margin-left: 20px;
+    margin-top: 10%;
+  }
+  .testimonials h2 {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
   }
   .testimonials .quotes::before {
     top: -40px;
@@ -749,7 +720,30 @@ footer a {
   .slick-dots li {
     margin: 15px 7px;
   }
-  .header__button {
+  header .container .header__menu .header__list {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 269px;
+    padding: 15px;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    margin-top: 53px;
+  }
+  header .container .header__menu .header__list.active {
+    transform: translateX(0);
+  }
+  header .container .header__menu .header__list a {
+    padding: 9px 7px;
+  }
+  header .container .header__menu .header__list a:hover {
+    padding: 9px 20px;
+  }
+  header .container .header__button {
     display: block;
     width: 40px;
     height: 30px;
@@ -761,7 +755,7 @@ footer a {
     position: absolute;
     overflow: hidden;
   }
-  .header__button span {
+  header .container .header__button span {
     width: 20px;
     height: 1px;
     position: absolute;
@@ -771,49 +765,28 @@ footer a {
     background-color: white;
     transition: all 0.3s;
   }
-  .header__button span:nth-of-type(2) {
+  header .container .header__button span:nth-of-type(2) {
     top: calc(50% - 5px);
   }
-  .header__button span:nth-of-type(3) {
+  header .container .header__button span:nth-of-type(3) {
     top: calc(50% + 5px);
   }
-  .header__button.active {
+  header .container .header__button.active {
     position: fixed;
   }
-  .header__list {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 320px;
-    padding: 15px;
-    background-color: white;
-    transform: translateX(-100%);
-    transition: transform 0.5s;
-  }
-  .header__list.active {
-    transform: translateX(0);
-  }
-  .header__list {
+  .mentors .mentors__list .human {
     display: flex;
     flex-direction: column;
   }
-  .header__list a {
-    padding: 7px;
-  }
-  .mentors .human {
-    display: flex;
-    flex-direction: column;
-  }
-  .mentors .human img {
+  .mentors .mentors__list .human img {
     margin: 20px auto 0 auto;
   }
-  .mentors .human h3 {
+  .mentors .mentors__list .human .human__info {
+    margin: 0;
+  }
+  .mentors .mentors__list .human .human__info h3 {
     display: flex;
     justify-content: center;
-  }
-  .mentors .human .human__info {
-    margin: 0;
   }
   .video .video__link iframe {
     height: 380px;
@@ -855,7 +828,7 @@ footer a {
   header {
     height: 70px;
   }
-  header .logo img {
+  header .container .logo img {
     margin-top: 5px;
     height: 60px;
     width: 60px;
@@ -863,7 +836,7 @@ footer a {
   .content .container {
     padding: 0 7px;
   }
-  .content .container .content-left h2 {
+  .content .container .content-left .content-left__info h2 {
     padding-top: 95px;
     line-height: 30px;
     font-size: 25px;
@@ -872,7 +845,7 @@ footer a {
     font-weight: 500;
     letter-spacing: 0.1px;
   }
-  .content .container .content-left p {
+  .content .container .content-left .content-left__info p {
     font-size: 14px;
     line-height: 25px;
     letter-spacing: 0;
@@ -896,14 +869,14 @@ footer a {
     padding-top: 8px;
     padding-bottom: 1px;
   }
-  .content .container .registration-form input[type=checkbox] {
+  .content .container .registration-form .form-group input[type=checkbox] {
     width: 14px;
     height: 14px;
     vertical-align: bottom;
     margin-top: 12px;
     margin-left: -2px;
   }
-  .content .container .registration-form a {
+  .content .container .registration-form .form-group a {
     display: block;
     margin-top: -25px;
     margin-left: 18px;
@@ -913,18 +886,26 @@ footer a {
     width: 80%;
   }
   .contact-form {
-    height: 100%;
+    height: 267px;
     padding-bottom: 30px;
   }
-  .contact-form__item {
-    width: 100%;
-    text-align: center;
-  }
-  .contact-form__list {
+  .contact-form .contact-form__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
+  }
+  .contact-form .contact-form__list .contact-form__item {
+    width: 100%;
+    text-align: center;
+  }
+  .contact-form .contact-form__list .contact-form__item img {
+    height: 40px;
+    width: 50px;
+    margin: 40px auto 3px auto;
+  }
+  .contact-form .contact-form__list .contact-form__item_margin-top img {
+    margin: 22px auto 0 auto;
   }
   .statistics {
     height: 340px;
@@ -973,14 +954,32 @@ footer a {
     margin-right: 100px;
     margin-left: 100px;
   }
+  .map {
+    height: 400px;
+  }
   .mentors h2 {
     padding: 36px 0 0 0;
     font-size: 27px;
   }
-  .mentors .human img {
+  .mentors .slick-dots li {
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+  .mentors .mentors__list .human img {
     width: 145px;
     height: 145px;
     margin: 13px auto 0 auto;
+  }
+  .mentors .mentors__list .human .human__info h3 {
+    margin-top: 22px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .mentors .mentors__list .human .human__info p {
+    text-align: center;
+    line-height: 22px;
+    font-size: 15px;
   }
   .testimonials {
     height: 525px;

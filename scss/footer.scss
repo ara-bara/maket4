@@ -1,25 +1,25 @@
 footer{
   height: 155px;
   background: #f7f7f7;
-  img{
-    height: 11px;
-    width: 11px;
-    margin-right: 8px;
+  .copyright{
+    margin-top: 50px;
+    @include center;
+    img{
+      height: 11px;
+      width: 11px;
+      margin-right: 8px;
+    }
+    span{
+      color: #3498db;
+      font-size: 14px;
+    }
   }
-  span{
-    color: #3498db;
-    font-size: 14px;
+  .privacy-policy{
+    @include center;
+    margin-top: 10px;
+    font-size: 15px;
   }
   a{
     color: #a0a0a0;
   }
-}
-.copyright{
-  margin-top: 50px;
-  @include center;
-}
-.privacy-policy{
-  @include center;
-  margin-top: 10px;
-  font-size: 15px;
 }

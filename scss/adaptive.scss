@@ -49,24 +49,44 @@
   .content{
     .container{
       flex-direction: column;
-      button{
-        margin: 32px auto 30px auto;
+      .content-left{
+        margin: 10px auto 20px auto;
+        height: 100%;
+        .content-left__info {
+          p {
+            padding-bottom: 35px;
+            margin-left: 0;
+          }
+        }
+      }
+      .registration-form{
+        margin: 0 auto;
+        height: 100%;
+        h2{
+          padding-top: 0;
+        }
+        button{
+          margin: 32px auto 30px auto;
+        }
       }
     }
   }
-  .content-left{
-    margin: 10px auto 20px auto;
+  .mentors {
     height: 100%;
-    p{
-      padding-bottom: 35px;
-      margin-left: 0;
+    h2 {
+      padding: 42px 0 40px 0;
+      @include center;
     }
-  }
-  .registration-form{
-    margin: 0 auto;
-    height: 100%;
-    h2{
-      padding-top: 0;
+    .slick-dots{
+      padding-bottom: 20px;
+    }
+    .mentors__list {
+      .human {
+        img {
+          margin-left: 20px;
+          margin-top: 10%;
+        }
+      }
     }
   }
   .testimonials{
@@ -74,24 +94,6 @@
       @include center;
       margin: 30px 0 30px 0;
     }
-  }
-  .mentors {
-    height: 100%;
-    .slick-dots{
-      padding-bottom: 20px;
-    }
-    .human{
-      img{
-        margin-left: 20px;
-        margin-top: 10%;
-      }
-    }
-    h2 {
-      padding: 42px 0 40px 0;
-      @include center;
-    }
-  }
-  .testimonials{
     .quotes{
       &::before{
         top: -40px;
@@ -114,73 +116,82 @@
   .slick-dots li{
     margin: 15px 7px;
   }
-  .header__button {
-    display: block;
-    width: 40px;
-    height: 30px;
-    z-index: 10;
-    border-radius: 3px;
-    right: 18px;
-    top: 20px;
-    background: #3498db;
-    position: absolute;
-    overflow: hidden;
-  }
-  .header__button span {
-    width: 20px;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    transition: all 0.3s;
+  header{
+    .container{
+      .header__menu{
+        .header__list {
+          position: fixed;
+          display: flex;
+          flex-direction: column;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 269px;
+          padding: 15px;
+          background-color: white;
+          transform: translateX(-100%);
+          transition: transform 0.5s;
+          margin-top: 53px;
+          &.active {
+            transform: translateX(0);
+          }
+          a{
+            padding: 9px 7px;
+            &:hover{
+              padding: 9px 20px;
+            }
+          }
+        }
+      }
+      .header__button {
+        display: block;
+        width: 40px;
+        height: 30px;
+        z-index: 10;
+        border-radius: 3px;
+        right: 18px;
+        top: 20px;
+        background: #3498db;
+        position: absolute;
+        overflow: hidden;
+        span {
+          width: 20px;
+          height: 1px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          transition: all 0.3s;
 
-    &:nth-of-type(2) {
-      top: calc(50% - 5px);
-    }
+          &:nth-of-type(2) {
+            top: calc(50% - 5px);
+          }
 
-    &:nth-of-type(3) {
-      top: calc(50% + 5px);
-    }
-  }
-  .header__button.active {
-    position: fixed;
-  }
-  .header__list {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 320px;
-    padding: 15px;
-    background-color: white;
-    transform: translateX(-100%);
-    transition: transform 0.5s;
-
-    &.active {
-      transform: translateX(0);
-    }
-  }
-  .header__list {
-    display: flex;
-    flex-direction: column;
-    a{
-      padding: 7px;
+          &:nth-of-type(3) {
+            top: calc(50% + 5px);
+          }
+        }
+      }
+      .header__button.active {
+        position: fixed;
+      }
     }
   }
   .mentors {
-    .human {
-      display: flex;
-      flex-direction: column;
-      img{
-        margin: 20px auto 0 auto;
-      }
-      h3 {
-        @include center;
-      }
-      .human__info {
-        margin: 0;
+    .mentors__list {
+      .human {
+        display: flex;
+        flex-direction: column;
+        img {
+          margin: 20px auto 0 auto;
+        }
+        .human__info {
+          margin: 0;
+          h3 {
+            @include center;
+          }
+        }
       }
     }
   }
@@ -244,30 +255,35 @@
 @media (max-width: 768px) {
   header {
     height: 70px;
-    .logo img{
-      margin-top: 5px;
-      height: 60px;
-      width: 60px;
+    .container {
+      .logo img {
+        margin-top: 5px;
+        height: 60px;
+        width: 60px;
+      }
     }
   }
   .content{
      .container{
        padding: 0 7px;
        .content-left {
-         h2 {
-           padding-top: 95px;
-           line-height: 30px;
-           font-size: 25px;
-           text-align: center;
-           margin:0 0 17px 0 ;
-           font-weight: 500;
-           letter-spacing: 0.1px;
-         }
-         p{
-           font-size: 14px;
-           line-height: 25px;
-           letter-spacing: 0;
-           font-weight: 400;
+         .content-left__info {
+           h2 {
+             padding-top: 95px;
+             line-height: 30px;
+             font-size: 25px;
+             text-align: center;
+             margin: 0 0 17px 0;
+             font-weight: 500;
+             letter-spacing: 0.1px;
+           }
+
+           p {
+             font-size: 14px;
+             line-height: 25px;
+             letter-spacing: 0;
+             font-weight: 400;
+           }
          }
        }
        .registration-form{
@@ -287,18 +303,20 @@
            padding-top: 8px;
            padding-bottom: 1px;
          }
-         input[type=checkbox] {
-           width:14px;
-           height: 14px;
-           vertical-align: bottom;
-           margin-top: 12px;
-           margin-left: -2px;
-         }
-         a{
-           display: block;
-           margin-top: -25px;
-           margin-left: 18px;
-           line-height: 20px;
+         .form-group{
+           input[type=checkbox] {
+             width:14px;
+             height: 14px;
+             vertical-align: bottom;
+             margin-top: 12px;
+             margin-left: -2px;
+           }
+           a{
+             display: block;
+             margin-top: -25px;
+             margin-left: 18px;
+             line-height: 20px;
+           }
          }
          button{
            width: 80%;
@@ -308,18 +326,28 @@
   }
 
   .contact-form{
-    height: 100%;
+    height: 267px;
     padding-bottom: 30px;
-  }
-  .contact-form__item {
-    width: 100%;
-    text-align: center;
-  }
-  .contact-form__list{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
+    .contact-form__list{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-items: center;
+      .contact-form__item {
+        width: 100%;
+        text-align: center;
+        img{
+          height: 40px;
+          width: 50px;
+          margin: 40px auto 3px auto;
+        }
+      }
+      .contact-form__item_margin-top{
+        img{
+          margin: 22px auto 0 auto;
+        }
+      }
+    }
   }
   .statistics{
     height: 340px;
@@ -398,16 +426,38 @@
       }
     }
   }
+  .map{
+    height: 400px;
+  }
   .mentors {
     h2 {
       padding: 36px 0 0 0;
       font-size: 27px;
     }
-    .human{
-      img{
-        width: 145px;
-        height: 145px;
-        margin: 13px auto 0 auto;
+    .slick-dots li{
+      margin-top: 2px;
+      margin-bottom: 10px;
+    }
+    .mentors__list {
+      .human {
+        img {
+          width: 145px;
+          height: 145px;
+          margin: 13px auto 0 auto;
+        }
+        .human__info {
+          h3 {
+            margin-top: 22px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            letter-spacing: 1px;
+          }
+          p {
+            text-align: center;
+            line-height: 22px;
+            font-size: 15px;
+          }
+        }
       }
     }
   }

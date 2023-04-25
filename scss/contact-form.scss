@@ -1,24 +1,24 @@
 .contact-form{
   height: 195px;
   background: #3498db;
-  a{
-    color: white;
-    font-size: 14px;
-    margin-top: -5px;
-  }
-  h3{
-    color: white;
-  }
 }
 .contact-form__list{
   display: flex;
-}
-.contact-form__item{
-  width: 405px;
-  text-align: center;
-  img{
-    margin: 40px auto 17px auto;
-    height: 54px;
-    width: 67px;
+  .contact-form__item{
+    width: 405px;
+    text-align: center;
+    a{
+      color: white;
+      font-size: 14px;
+      margin-top: -5px;
+    }
+    h3{
+      color: white;
+    }
+    img{
+      margin: 40px auto 17px auto;
+      height: 54px;
+      width: 67px;
+    }
   }
 }
