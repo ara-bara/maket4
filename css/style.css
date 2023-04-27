@@ -75,6 +75,21 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Open Sans";
 }
+.content .container .registration-form button span {
+  color: white;
+}
+
+/* padding*/
+/* box shadow red*/
+/* box shadow blue*/
+/* padding left*/
+/* star for registration form*/
+/* width + border bottom*/
+/* paragraph */
+/* quotes medium*/
+/*quotes styles*/
+/* quotes small*/
+/* centering */
 body {
   height: 100%;
   line-height: 22px;
@@ -98,21 +113,6 @@ main {
   padding: 0 15px;
 }
 
-.content .container .registration-form button span {
-  color: white;
-}
-
-/* padding*/
-/* box shadow red*/
-/* box shadow blue*/
-/* padding left*/
-/* star for registration form*/
-/* width + border bottom*/
-/* paragraph */
-/* quotes medium*/
-/*quotes styles*/
-/* quotes small*/
-/* centering */
 /*slick style*/
 .slick-track {
   display: flex;
@@ -161,6 +161,9 @@ header .container .logo img {
   position: fixed;
   z-index: 10;
 }
+header .container .header__button {
+  display: none;
+}
 header .container .header__menu {
   display: flex;
 }
@@ -184,15 +187,13 @@ header .container .header__menu .header__list a:hover {
   padding: 10px 20px;
   color: white;
 }
-header .container .header__menu .header__button {
-  display: none;
-}
 
 .content {
   background: #f7f7f7;
 }
 .content .container {
   display: flex;
+  justify-content: space-between;
 }
 .content .container .content-left {
   margin-top: 100px;
@@ -201,7 +202,7 @@ header .container .header__menu .header__button {
 }
 .content .container .content-left .content-left__info {
   max-width: 580px;
-  margin: 0 15px;
+  margin-left: 36px;
 }
 .content .container .content-left .content-left__info h2 {
   padding-top: 212px;
@@ -224,7 +225,6 @@ header .container .header__menu .header__button {
 .content .container .registration-form {
   margin-top: 100px;
   max-width: 610px;
-  margin-left: 35px;
 }
 .content .container .registration-form h2 {
   padding-top: 55px;
