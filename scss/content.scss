@@ -3,13 +3,14 @@
   .container{
     display: flex;
     justify-content: space-between;
+    padding: 0 5px;
     .content-left{
       margin-top: 100px;
       max-width: 610px;
       height: 670px;
       .content-left__info{
         max-width: 580px;
-        margin-left: 36px;
+        margin-left: 50px;
         h2{
           padding-top: 212px;
           font-weight: bold;
@@ -33,6 +34,7 @@
     .registration-form{
       margin-top: 100px;
       max-width: 610px;
+      margin-left: 10px;
       h2{
         padding-top: 55px;
         padding-bottom: 14px;

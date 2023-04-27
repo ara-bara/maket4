@@ -108,7 +108,7 @@ main {
 }
 
 .container {
-  max-width: 1220px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -116,6 +116,12 @@ main {
 /*slick style*/
 .slick-track {
   display: flex;
+  flex-direction: row;
+}
+
+.slick-slider {
+  display: block;
+  overflow: hidden;
 }
 
 .slick-list {
@@ -149,7 +155,7 @@ header {
   width: 100%;
 }
 header .container {
-  width: 1220px;
+  width: 1250px;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -159,6 +165,7 @@ header .container .logo img {
   width: 80px;
   margin-top: 10px;
   position: fixed;
+  margin-left: 10px;
   z-index: 10;
 }
 header .container .header__button {
@@ -194,6 +201,7 @@ header .container .header__menu .header__list a:hover {
 .content .container {
   display: flex;
   justify-content: space-between;
+  padding: 0 5px;
 }
 .content .container .content-left {
   margin-top: 100px;
@@ -202,7 +210,7 @@ header .container .header__menu .header__list a:hover {
 }
 .content .container .content-left .content-left__info {
   max-width: 580px;
-  margin-left: 36px;
+  margin-left: 50px;
 }
 .content .container .content-left .content-left__info h2 {
   padding-top: 212px;
@@ -225,6 +233,7 @@ header .container .header__menu .header__list a:hover {
 .content .container .registration-form {
   margin-top: 100px;
   max-width: 610px;
+  margin-left: 10px;
 }
 .content .container .registration-form h2 {
   padding-top: 55px;
@@ -363,6 +372,8 @@ header .container .header__menu .header__list a:hover {
   padding-top: 75px;
   text-align: center;
   font-size: 35px;
+  letter-spacing: 0.8px;
+  margin-left: 13px;
 }
 .course-outline .course-outline__list .slick-list {
   display: flex;
@@ -375,9 +386,17 @@ header .container .header__menu .header__list a:hover {
 .course-outline .course-outline__list .slick-list .slick-track .list__item {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 30px;
+  margin-left: 14px;
+  width: 33.33%;
+}
+.course-outline .course-outline__list .slick-list .slick-track .list__item:first-child {
+  margin-right: 50px;
   margin-left: 20px;
-  width: 350px !important;
+}
+.course-outline .course-outline__list .slick-list .slick-track .list__item:last-child {
+  margin-right: 0;
+  margin-left: 50px;
 }
 .course-outline .course-outline__list .slick-list .slick-track .list__item h3 {
   padding-bottom: 20px;
@@ -403,12 +422,13 @@ header .container .header__menu .header__list a:hover {
   color: #a0a0a0;
 }
 .course-outline .course-outline__list .slick-list .slick-track .list__item_middle {
-  width: 324px !important;
+  width: 33.33%;
 }
 
 .statistics {
   height: 310px;
   background: #3498db;
+  padding-left: 20px;
 }
 .statistics .statistics__list {
   display: flex;
@@ -446,9 +466,11 @@ header .container .header__menu .header__list a:hover {
 
 .testimonials {
   height: 525px;
+  padding-left: 20px;
 }
 .testimonials h2 {
-  margin: 77px 0 37px 0;
+  margin: 77px 25px 37px 0;
+  letter-spacing: 0.7px;
   text-align: center;
   font-size: 36px;
 }
@@ -502,7 +524,7 @@ header .container .header__menu .header__list a:hover {
 }
 .video h2 {
   padding-top: 78px;
-  padding-left: 565px;
+  padding-left: 576px;
   font-size: 35px;
 }
 .video p {
@@ -517,16 +539,18 @@ header .container .header__menu .header__list a:hover {
   width: 1020px;
   height: 520px;
   display: block;
-  margin: 27px auto 0 auto;
+  margin: 27px 0 0 9%;
 }
 
 .mentors {
   height: 615px;
+  padding-left: 20px;
 }
 .mentors h2 {
   padding-left: 492px;
   padding-top: 82px;
   font-size: 36px;
+  letter-spacing: 1px;
 }
 .mentors .mentors__list .human {
   display: flex;
@@ -547,9 +571,10 @@ header .container .header__menu .header__list a:hover {
 .mentors .mentors__list .human .human__info h3 {
   margin-top: 42px;
   margin-bottom: 50px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   color: #337ab7;
+  letter-spacing: 1px;
 }
 .mentors .mentors__list .human .human__info .paragraph-bottom {
   margin-bottom: 8px;
@@ -569,6 +594,7 @@ header .container .header__menu .header__list a:hover {
 .contact-form {
   height: 195px;
   background: #3498db;
+  padding-left: 20px;
 }
 
 .contact-form__list {
@@ -613,7 +639,7 @@ footer .copyright span {
 footer .privacy-policy {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 13px;
   font-size: 15px;
 }
 footer a {
@@ -636,6 +662,7 @@ footer a {
     width: 940px;
     height: 480px;
     padding-bottom: 30px;
+    margin: 27px auto 0 auto;
   }
   .statistics {
     height: 100%;

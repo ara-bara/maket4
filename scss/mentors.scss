@@ -1,9 +1,11 @@
 .mentors{
   height: 615px;
+  padding-left: 20px;
   h2{
     padding-left: 492px;
     padding-top: 82px;
     font-size: 36px;
+    letter-spacing: 1px;
   }
   .mentors__list{
     .human{
@@ -23,9 +25,10 @@
         h3{
           margin-top: 42px;
           margin-bottom: 50px;
-          font-size: 20px;
+          font-size: 22px;
           font-weight: bold;
           color: #337ab7;
+          letter-spacing: 1px;
         }
         .paragraph-bottom{
           margin-bottom: 8px;
