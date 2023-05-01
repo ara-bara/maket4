@@ -58,15 +58,15 @@ main{
   border-radius: 50%;
 }
 
-@import "header.scss";
-@import "content.scss";
-@import "course-outline.scss";
-@import "statistics-block.scss";
-@import "testimonials.scss";
-@import "video.scss";
-@import "mentors.scss";
-@import "map.scss";
-@import "contact-form.scss";
-@import "footer.scss";
-@import "adaptive.scss";
+@import "_header.scss";
+@import "_content.scss";
+@import "_course-outline.scss";
+@import "_statistics-block.scss";
+@import "_testimonials.scss";
+@import "_video.scss";
+@import "_mentors.scss";
+@import "_map.scss";
+@import "_contact-form.scss";
+@import "_footer.scss";
+@import "_adaptive.scss";
 

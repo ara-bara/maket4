@@ -88,7 +88,7 @@ $s :11px;
   margin-left: $s;
 }
 
-/*margin rigth and left*/
+/*margin right and left*/
 @mixin mrl($size,$s){
   margin-right: $size;
   margin-left: $s;
