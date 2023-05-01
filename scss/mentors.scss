@@ -7,16 +7,15 @@
     font-size: 36px;
     letter-spacing: 1px;
   }
-  .mentors__list{
+  &__list{
     .human{
       display: flex;
       img{
-        margin-left: 75px;
-        margin-top: 10px;
+        @include mtl(10px,75px);
         height: 356px;
         width: 337px;
       }
-      .human__info{
+      &__info{
         margin-left: 106px;
         p{
           line-height: 25px;

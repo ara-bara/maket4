@@ -90,6 +90,8 @@ h1, h2, h3, h4, h5, h6 {
 /*quotes styles*/
 /* quotes small*/
 /* centering */
+/*margin top and left*/
+/*margin rigth and left*/
 body {
   height: 100%;
   line-height: 22px;
@@ -163,8 +165,8 @@ header .container {
 header .container .logo img {
   height: 80px;
   width: 80px;
-  margin-top: 10px;
   position: fixed;
+  margin-top: 10px;
   margin-left: 10px;
   z-index: 10;
 }
@@ -208,11 +210,11 @@ header .container .header__menu .header__list a:hover {
   max-width: 610px;
   height: 670px;
 }
-.content .container .content-left .content-left__info {
+.content .container .content-left__info {
   max-width: 580px;
   margin-left: 50px;
 }
-.content .container .content-left .content-left__info h2 {
+.content .container .content-left__info h2 {
   padding-top: 212px;
   font-weight: bold;
   font-size: 35px;
@@ -220,7 +222,7 @@ header .container .header__menu .header__list a:hover {
   text-align: center;
   letter-spacing: 1px;
 }
-.content .container .content-left .content-left__info p {
+.content .container .content-left__info p {
   padding-bottom: 110px;
   max-width: 520px;
   font-size: 18px;
@@ -232,8 +234,8 @@ header .container .header__menu .header__list a:hover {
 }
 .content .container .registration-form {
   margin-top: 100px;
-  max-width: 610px;
   margin-left: 10px;
+  max-width: 610px;
 }
 .content .container .registration-form h2 {
   padding-top: 55px;
@@ -375,54 +377,51 @@ header .container .header__menu .header__list a:hover {
   letter-spacing: 0.8px;
   margin-left: 13px;
 }
-.course-outline .course-outline__list .slick-list {
+.course-outline__list .slick-list {
   display: flex;
   justify-content: center;
 }
-.course-outline .course-outline__list .slick-list .slick-track {
+.course-outline__list .slick-list .slick-track {
   display: flex;
   justify-content: center;
 }
-.course-outline .course-outline__list .slick-list .slick-track .list__item {
+.course-outline__list .slick-list .slick-track .list__item {
   display: flex;
   flex-direction: column;
   margin-right: 30px;
   margin-left: 14px;
   width: 33.33%;
 }
-.course-outline .course-outline__list .slick-list .slick-track .list__item:first-child {
+.course-outline__list .slick-list .slick-track .list__item:first-child {
   margin-right: 50px;
   margin-left: 20px;
 }
-.course-outline .course-outline__list .slick-list .slick-track .list__item:last-child {
+.course-outline__list .slick-list .slick-track .list__item:last-child {
   margin-right: 0;
   margin-left: 50px;
 }
-.course-outline .course-outline__list .slick-list .slick-track .list__item h3 {
+.course-outline__list .slick-list .slick-track .list__item h3 {
   padding-bottom: 20px;
   margin-bottom: 34px;
   border-bottom: 1px solid #337ab7;
 }
-.course-outline .course-outline__list .slick-list .slick-track .list__item p {
+.course-outline__list .slick-list .slick-track .list__item p {
   text-align: center;
   line-height: 23px;
 }
-.course-outline .course-outline__list .slick-list .slick-track .list__item .course-img {
+.course-outline__list .slick-list .slick-track .list__item .course-img {
   margin: 45px auto 24px auto;
   width: 82px;
   height: 82px;
 }
-.course-outline .course-outline__list .slick-list .slick-track .list__item h3 {
+.course-outline__list .slick-list .slick-track .list__item h3 {
   font-size: 23px;
   letter-spacing: 0.95px;
   font-weight: 100;
   text-align: center;
 }
-.course-outline .course-outline__list .slick-list .slick-track .list__item p {
+.course-outline__list .slick-list .slick-track .list__item p {
   color: #a0a0a0;
-}
-.course-outline .course-outline__list .slick-list .slick-track .list__item_middle {
-  width: 33.33%;
 }
 
 .statistics {
@@ -430,31 +429,31 @@ header .container .header__menu .header__list a:hover {
   background: #3498db;
   padding-left: 20px;
 }
-.statistics .statistics__list {
+.statistics__list {
   display: flex;
 }
-.statistics .statistics__list .statistic__item {
+.statistics__list .statistic__item {
   display: flex;
   flex-direction: column;
   width: 405px;
 }
-.statistics .statistics__list .statistic__item .statistic-quantity {
-  margin-left: 130px;
+.statistics__list .statistic__item_quantity {
   margin-top: 30px;
+  margin-left: 130px;
   font-size: 27px;
 }
-.statistics .statistics__list .statistic__item .statistic-description {
+.statistics__list .statistic__item_description {
   margin-top: 16px;
   margin-left: 77px;
 }
-.statistics .statistics__list .statistic__item .statistic-description_small-padding {
+.statistics__list .statistic__item .small-padding {
   margin-left: 10px;
   text-align: center;
 }
-.statistics .statistics__list .statistic__item .statistic-quantity_big-padding {
+.statistics__list .statistic__item .big-padding {
   margin-left: 136px;
 }
-.statistics .statistics__list .statistic__item img {
+.statistics__list .statistic__item img {
   margin-top: 80px;
   margin-left: 112px;
   width: 80px;
@@ -535,7 +534,7 @@ header .container .header__menu .header__list a:hover {
   text-align: center;
   color: #a0a0a0;
 }
-.video .video__link iframe {
+.video__link iframe {
   width: 1020px;
   height: 520px;
   display: block;
@@ -552,23 +551,23 @@ header .container .header__menu .header__list a:hover {
   font-size: 36px;
   letter-spacing: 1px;
 }
-.mentors .mentors__list .human {
+.mentors__list .human {
   display: flex;
 }
-.mentors .mentors__list .human img {
-  margin-left: 75px;
+.mentors__list .human img {
   margin-top: 10px;
+  margin-left: 75px;
   height: 356px;
   width: 337px;
 }
-.mentors .mentors__list .human .human__info {
+.mentors__list .human__info {
   margin-left: 106px;
 }
-.mentors .mentors__list .human .human__info p {
+.mentors__list .human__info p {
   line-height: 25px;
   color: #a0a0a0;
 }
-.mentors .mentors__list .human .human__info h3 {
+.mentors__list .human__info h3 {
   margin-top: 42px;
   margin-bottom: 50px;
   font-size: 22px;
@@ -576,10 +575,10 @@ header .container .header__menu .header__list a:hover {
   color: #337ab7;
   letter-spacing: 1px;
 }
-.mentors .mentors__list .human .human__info .paragraph-bottom {
+.mentors__list .human__info .paragraph-bottom {
   margin-bottom: 8px;
 }
-.mentors .mentors__list .human .human__info .paragraph-bigger {
+.mentors__list .human__info .paragraph-bigger {
   margin-bottom: 10px;
 }
 
@@ -596,23 +595,22 @@ header .container .header__menu .header__list a:hover {
   background: #3498db;
   padding-left: 20px;
 }
-
-.contact-form__list {
+.contact-form .contact-form__list {
   display: flex;
 }
-.contact-form__list .contact-form__item {
+.contact-form .contact-form__list .contact-form__item {
   width: 405px;
   text-align: center;
 }
-.contact-form__list .contact-form__item a {
+.contact-form .contact-form__list .contact-form__item a {
   color: white;
   font-size: 14px;
   margin-top: -5px;
 }
-.contact-form__list .contact-form__item h3 {
+.contact-form .contact-form__list .contact-form__item h3 {
   color: white;
 }
-.contact-form__list .contact-form__item img {
+.contact-form .contact-form__list .contact-form__item img {
   margin: 40px auto 17px auto;
   height: 54px;
   width: 67px;
@@ -667,21 +665,20 @@ footer a {
   .statistics {
     height: 100%;
     padding-bottom: 40px;
+    padding-left: 0;
   }
-  .statistics .statistics__list {
+  .statistics__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .statistics .statistics__list .statistic__item {
+  .statistics__list .statistic__item {
     width: 305px;
     margin: 0 auto;
   }
   .course-outline h2 {
     padding-top: 72px;
-  }
-  .course-outline .course-outline__list .slick-track .list__item {
-    width: 270px !important;
+    margin-left: 0;
   }
   .course-outline .course-outline__list .slick-track .list__item h3 {
     font-size: 20px;
@@ -691,13 +688,17 @@ footer a {
     padding: 0 5px;
   }
   .content .container {
+    padding: 0 15px;
     flex-direction: column;
   }
   .content .container .content-left {
     margin: 10px auto 20px auto;
     height: 100%;
   }
-  .content .container .content-left .content-left__info p {
+  .content .container .content-left__info {
+    margin-left: 0;
+  }
+  .content .container .content-left__info p {
     padding-bottom: 35px;
     margin-left: 0;
   }
@@ -726,6 +727,9 @@ footer a {
     margin-left: 20px;
     margin-top: 10%;
   }
+  .testimonials {
+    height: auto;
+  }
   .testimonials h2 {
     display: flex;
     justify-content: center;
@@ -734,9 +738,15 @@ footer a {
   .testimonials .quotes::before {
     top: -40px;
   }
+  .testimonials .testimonial__people p:last-child {
+    margin-bottom: 30px;
+  }
+  .testimonials .slick-dots {
+    margin-bottom: 25px;
+  }
 }
 @media (max-width: 1020px) {
-  .video .video__link iframe {
+  .video__link iframe {
     width: 100%;
   }
 }
@@ -746,6 +756,9 @@ footer a {
   }
   .slick-dots li {
     margin: 15px 7px;
+  }
+  header .container .logo img {
+    margin-left: 0;
   }
   header .container .header__menu .header__list {
     position: fixed;
@@ -801,6 +814,12 @@ footer a {
   header .container .header__button.active {
     position: fixed;
   }
+  .mentors {
+    padding-left: 0;
+  }
+  .mentors h2 {
+    letter-spacing: 0;
+  }
   .mentors .mentors__list .human {
     display: flex;
     flex-direction: column;
@@ -812,14 +831,23 @@ footer a {
     margin: 0;
   }
   .mentors .mentors__list .human .human__info h3 {
+    letter-spacing: 0;
     display: flex;
     justify-content: center;
   }
   .video .video__link iframe {
     height: 380px;
+    width: 100%;
   }
   .course-outline {
-    height: 600px;
+    height: auto;
+  }
+  .testimonials {
+    padding-left: 0;
+  }
+  .testimonials h2 {
+    margin: 77px 0 37px 0;
+    letter-spacing: 0;
   }
   .testimonials .quotes::before {
     width: 30px;
@@ -833,9 +861,6 @@ footer a {
   }
 }
 @media (max-width: 850px) {
-  .course-outline .course-outline__list .slick-list .slick-track .list__item {
-    width: 370px !important;
-  }
   .course-outline .course-outline__list .slick-list .slick-track .list__item h3 {
     font-size: 22px;
     padding-bottom: 8px;
@@ -864,7 +889,7 @@ footer a {
     padding: 0 7px;
   }
   .content .container .content-left .content-left__info h2 {
-    padding-top: 95px;
+    padding-top: 93px;
     line-height: 30px;
     font-size: 25px;
     text-align: center;
@@ -884,6 +909,7 @@ footer a {
   .content .container .registration-form h2 {
     text-align: center;
     font-weight: 400;
+    padding-top: 25px;
   }
   .content .container .registration-form input {
     width: 100%;
@@ -915,6 +941,7 @@ footer a {
   .contact-form {
     height: 267px;
     padding-bottom: 30px;
+    padding-left: 0;
   }
   .contact-form .contact-form__list {
     display: grid;
@@ -937,27 +964,30 @@ footer a {
   .statistics {
     height: 340px;
   }
-  .statistics .statistics__list .statistic__item {
+  .statistics__list .statistic__item {
     width: 100%;
   }
-  .statistics .statistics__list .statistic__item img {
+  .statistics__list .statistic__item img {
     margin: 40px auto 0 auto;
     width: 80px;
     height: 60px;
   }
-  .statistics .statistics__list .statistic__item .statistic-quantity {
+  .statistics__list .statistic__item_quantity {
     margin: 5px auto 0 auto;
     font-size: 18px;
   }
-  .statistics .statistics__list .statistic__item .statistic-description {
+  .statistics__list .statistic__item_description {
     margin: 3px auto 0 auto;
     text-align: center;
     font-size: 13px;
   }
-  .statistics .statistics__list .statistic__item .statistic-description_small-padding {
+  .statistics__list .statistic__item .small-padding {
     margin: 0 auto;
   }
-  .statistics .statistics__list .statistic__item_bottom img {
+  .statistics__list .statistic__item .big-padding {
+    margin: 0 auto;
+  }
+  .statistics__list .statistic__item_bottom img {
     margin: 20px auto 2px auto;
   }
   .testimonials h2 {
@@ -976,11 +1006,6 @@ footer a {
   }
 }
 @media (max-width: 599px) {
-  .course-outline .course-outline__list .slick-list .slick-track .list__item {
-    width: 400px !important;
-    margin-right: 100px;
-    margin-left: 100px;
-  }
   .map {
     height: 400px;
   }
@@ -1009,7 +1034,6 @@ footer a {
     font-size: 15px;
   }
   .testimonials {
-    height: 525px;
     line-height: 29px;
   }
   .testimonials h2 {
@@ -1023,20 +1047,21 @@ footer a {
     bottom: -25px;
   }
   .course-outline .course-outline__list .slick-list .slick-track .list__item h3 {
+    font-size: 28px;
     height: 53px;
+  }
+}
+@media (max-width: 500px) {
+  .course-outline .course-outline__list .slick-list .slick-track .list__item h3 {
+    font-size: 25px;
   }
 }
 @media (max-width: 450px) {
   .course-outline h2 {
     font-size: 26px;
   }
-  .course-outline .course-outline__list .slick-list .slick-track .list__item {
-    width: 350px !important;
-    margin-right: 60px;
-    margin-left: 60px;
-  }
   .testimonials .testimonial__people p:last-child {
-    margin-bottom: 68px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 350px) {
@@ -1092,15 +1117,16 @@ footer a {
   }
   .testimonials .testimonial__people p:last-child {
     margin-top: -7px;
+    margin-bottom: 68px;
     font-size: 15px;
   }
   .course-outline {
     height: 585px;
   }
   .course-outline .course-outline__list .slick-list .slick-track .list__item {
-    width: 350px !important;
-    margin-right: 15px;
-    margin-left: 15px;
-    padding: 0;
+    padding-bottom: 2px;
+  }
+  footer .copyright {
+    margin-top: 30px;
   }
 }

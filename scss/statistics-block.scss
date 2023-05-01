@@ -2,31 +2,28 @@
   height: 310px;
   background: #3498db;
   padding-left: 20px;
-  .statistics__list{
+  &__list{
     display: flex;
     .statistic__item{
       display: flex;
       flex-direction: column;
       width: 405px;
-      .statistic-quantity{
-        margin-left: 130px;
-        margin-top: 30px;
+      &_quantity{
+        @include mtl(30px,130px);
         font-size: 27px;
       }
-      .statistic-description{
-        margin-top: 16px;
-        margin-left: 77px;
+      &_description{
+        @include mtl(16px,77px);
       }
-      .statistic-description_small-padding{
+      .small-padding{
         margin-left: 10px;
         text-align: center;
       }
-      .statistic-quantity_big-padding{
+      .big-padding{
         margin-left: 136px;
       }
       img{
-        margin-top: 80px;
-        margin-left: 112px;
+        @include mtl(80px,112px);
         width: 80px;
         height: 60px;
       }

@@ -7,7 +7,7 @@
     letter-spacing: 0.8px;
     margin-left: 13px;
   }
-  .course-outline__list{
+  &__list{
     .slick-list {
       display: flex;
       justify-content: center;
@@ -16,17 +16,14 @@
         justify-content: center;
         .list__item {
           &:first-child{
-            margin-right: 50px;
-            margin-left: 20px;
+            @include mrl(50px,20px);
           }
           &:last-child{
-            margin-right: 0;
-            margin-left: 50px;
+            @include mrl(0,50px);
           }
           display: flex;
           flex-direction: column;
-          margin-right: 30px;
-          margin-left: 14px;
+          @include mrl(30px,14px);
           @include wbb;
           @include parag;
           .course-img {
@@ -43,9 +40,6 @@
           p {
             color: #a0a0a0;
           }
-        }
-        .list__item_middle {
-          width: 33.33%;
         }
       }
     }

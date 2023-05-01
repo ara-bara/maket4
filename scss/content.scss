@@ -8,7 +8,7 @@
       margin-top: 100px;
       max-width: 610px;
       height: 670px;
-      .content-left__info{
+      &__info{
         max-width: 580px;
         margin-left: 50px;
         h2{
@@ -32,9 +32,8 @@
       }
     }
     .registration-form{
-      margin-top: 100px;
+      @include mtl(100px,10px);
       max-width: 610px;
-      margin-left: 10px;
       h2{
         padding-top: 55px;
         padding-bottom: 14px;

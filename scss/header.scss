@@ -13,9 +13,8 @@ header{
     .logo img{
       height: 80px;
       width: 80px;
-      margin-top: 10px;
       position: fixed;
-      margin-left: 10px;
+      @include mtl(10px,10px);
       z-index: 10;
     }
     .header__button{

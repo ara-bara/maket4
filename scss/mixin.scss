@@ -78,3 +78,18 @@
   display: flex;
   justify-content: center;
 }
+
+$size :10px;
+$s :11px;
+
+/*margin top and left*/
+@mixin mtl($size,$s){
+  margin-top: $size;
+  margin-left: $s;
+}
+
+/*margin rigth and left*/
+@mixin mrl($size,$s){
+  margin-right: $size;
+  margin-left: $s;
+}
